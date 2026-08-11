@@ -341,6 +341,8 @@ Todo componente do FinanceHub deverá respeitar os seguintes princípios.
 
 ## Nenhuma implementação poderá comprometer a integridade da memória financeira do usuário.
 
+## O FinanceHub deverá evoluir continuamente sem sacrificar desempenho, simplicidade ou clareza.
+
 ---
 
 # 12. Como Medimos Sucesso
