@@ -82,3 +82,113 @@ Isso será realizado através de cinco capacidades fundamentais.
 - Evoluir
 
 Toda funcionalidade do produto deverá contribuir para pelo menos uma dessas capacidades.
+
+---
+
+# 6. Princípios do Produto
+
+Os princípios definidos nesta seção orientam todas as decisões relacionadas ao desenvolvimento do FinanceHub.
+
+Eles representam requisitos permanentes do produto e deverão ser respeitados por qualquer implementação, independentemente da tecnologia utilizada.
+
+Nenhuma funcionalidade poderá contrariar estes princípios.
+
+---
+
+## 6.1 Domínio antes da Tecnologia
+
+As decisões de negócio têm prioridade sobre decisões tecnológicas.
+
+O produto deve ser modelado a partir das necessidades do domínio financeiro, e não das limitações ou características de uma tecnologia específica.
+
+Tecnologias podem evoluir ou ser substituídas.
+
+O domínio do FinanceHub deve permanecer consistente.
+
+---
+
+## 6.2 Inteligência antes de Inteligência Artificial
+
+A capacidade de gerar inteligência é um requisito do produto.
+
+A utilização de Inteligência Artificial é apenas uma das possíveis formas de implementar essa capacidade.
+
+O FinanceHub deverá ser capaz de produzir conhecimento através da correlação de dados, regras de negócio, análises históricas, estatísticas e demais mecanismos próprios.
+
+Modelos de IA Generativa representam uma evolução da plataforma, nunca uma dependência.
+
+---
+
+## 6.3 Memória Financeira como Patrimônio
+
+Toda informação financeira possui valor histórico.
+
+Eventos Financeiros representam fatos.
+
+Snapshots representam estados derivados.
+
+Ambos deverão preservar a capacidade de reconstruir a evolução financeira do usuário ao longo do tempo.
+
+Nenhuma implementação poderá comprometer essa memória.
+
+---
+
+## 6.4 Capacidades antes de Funcionalidades
+
+O FinanceHub é definido por suas capacidades.
+
+Funcionalidades representam apenas implementações dessas capacidades.
+
+Toda nova funcionalidade deverá estar vinculada a uma capacidade existente ou justificar a criação de uma nova.
+
+---
+
+## 6.5 Otimização por Design
+
+Otimização faz parte da concepção do produto.
+
+Ela não representa uma etapa posterior de desenvolvimento.
+
+Toda decisão deverá buscar o melhor equilíbrio entre:
+
+- simplicidade;
+- desempenho;
+- escalabilidade;
+- custo operacional;
+- facilidade de manutenção;
+- experiência do usuário.
+
+Sempre que existirem alternativas funcionalmente equivalentes, deverá ser escolhida aquela que apresentar o melhor equilíbrio entre esses fatores.
+
+---
+
+## 6.6 Evolução Contínua
+
+O FinanceHub deverá evoluir continuamente sem exigir reconstruções estruturais.
+
+A arquitetura deverá favorecer extensibilidade, baixo acoplamento e reutilização.
+
+Novas capacidades deverão poder ser incorporadas preservando compatibilidade com a base existente.
+
+---
+
+## 6.7 Simplicidade
+
+Complexidade somente será aceita quando produzir benefício comprovado.
+
+O produto deverá privilegiar soluções simples, previsíveis e facilmente compreendidas.
+
+A simplicidade reduz erros, facilita manutenção e melhora a experiência do usuário.
+
+---
+
+# 7. Capacidades do Produto
+
+O FinanceHub é composto por um conjunto de capacidades.
+
+Cada capacidade representa uma responsabilidade permanente da plataforma.
+
+Funcionalidades, telas, APIs e estruturas de banco de dados existem apenas para implementar essas capacidades.
+
+As capacidades constituem o principal contrato funcional do produto.
+
