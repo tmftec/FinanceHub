@@ -236,6 +236,19 @@ O objetivo da plataforma é apoiar a evolução financeira do usuário por meio 
 
 # 4. Jornadas de Evolução
 
+A Inteligência Financeira acompanha toda a jornada do usuário.
+
+Sua atuação evolui progressivamente:
+
+- orientar;
+- organizar;
+- observar;
+- revelar;
+- simular;
+- evoluir continuamente.
+
+Cada etapa amplia a capacidade da plataforma de gerar conhecimento contextualizado e apoiar decisões cada vez mais relevantes.
+
 As Jornadas de Evolução representam os diferentes momentos da relação entre o usuário e sua vida financeira.
 
 Elas não correspondem a funcionalidades específicas nem a fluxos de navegação.
@@ -661,18 +674,142 @@ O ciclo de evolução financeira torna-se permanente.
 
 ---
 
-# 5. O Ciclo de Evolução Financeira
+# 5. Modelo de Evolução Financeira
 
-A Jornada de Evolução do FinanceHub não possui um ponto final.
+O FinanceHub baseia-se em um modelo de evolução contínua, no qual o usuário e a própria plataforma evoluem simultaneamente ao longo do tempo.
 
-Cada evolução alcançada amplia a compreensão do usuário sobre sua própria realidade financeira, permitindo novas descobertas, novos objetivos e novas oportunidades de crescimento.
+A evolução financeira não representa um destino final, mas um processo permanente de aprendizado, adaptação e melhoria contínua.
 
-A Inteligência Financeira acompanha continuamente esse processo, adaptando o conhecimento apresentado conforme aumenta o contexto disponível e a maturidade financeira do usuário.
+Cada nova interação amplia a capacidade da plataforma de compreender o contexto financeiro do usuário e, consequentemente, aumenta sua capacidade de gerar conhecimento útil para apoiar decisões.
 
-O objetivo do FinanceHub não é concluir uma jornada.
-
-É apoiar uma evolução permanente.
+Esse modelo é sustentado por três dimensões complementares.
 
 ---
 
+## 5.1 Evolução do Usuário
+
+À medida que utiliza o FinanceHub, o usuário desenvolve maior compreensão sobre sua própria realidade financeira.
+
+Essa evolução manifesta-se através da melhoria dos hábitos, da qualidade das decisões e da capacidade de planejar o futuro com maior segurança.
+
+O objetivo da plataforma não é apenas organizar informações financeiras, mas contribuir continuamente para o aumento da maturidade financeira do usuário.
+
+---
+
+## 5.2 Evolução da Plataforma
+
+O FinanceHub amplia continuamente seu conhecimento sobre a realidade financeira do usuário.
+
+Esse conhecimento é construído a partir do histórico financeiro, dos comportamentos observados, dos objetivos definidos, da sazonalidade, do contexto e das relações identificadas entre os acontecimentos financeiros.
+
+Essa evolução constitui a Memória Financeira da plataforma e permite que o conhecimento produzido se torne progressivamente mais contextualizado e relevante.
+
+---
+
+## 5.3 Evolução da Inteligência Financeira
+
+A Inteligência Financeira acompanha toda a jornada do usuário.
+
+Sua atuação evolui continuamente conforme aumenta o conhecimento contextual disponível.
+
+Essa evolução ocorre progressivamente:
+
+- orientar;
+- organizar;
+- observar;
+- revelar;
+- simular;
+- evoluir continuamente junto ao usuário.
+
+A Inteligência Financeira não depende exclusivamente de Inteligência Artificial externa.
+
+Ela é construída prioritariamente pela combinação entre contexto, memória financeira, regras de negócio, comportamento histórico, indicadores e relações identificadas pela própria plataforma.
+
+---
+
+## 5.4 O Ciclo de Evolução
+
+As três dimensões evoluem simultaneamente e alimentam continuamente umas às outras.
+
+Maior conhecimento sobre o usuário permite produzir melhores descobertas.
+
+Melhores descobertas promovem melhores decisões.
+
+Melhores decisões geram novos comportamentos, ampliando novamente o conhecimento disponível para a plataforma.
+
+Esse ciclo reinicia continuamente, permitindo que cada nova etapa da jornada produza uma compreensão mais profunda da realidade financeira do usuário.
+
+Não existe um ponto final para essa evolução.
+
+O FinanceHub acompanha permanentemente esse processo, adaptando sua experiência, aprofundando suas análises e oferecendo conhecimento cada vez mais relevante para apoiar decisões.
+
+É esse modelo de evolução contínua que caracteriza o FinanceHub como uma Plataforma de Inteligência Financeira.
+
+---
+
+                   Modelo de Evolução Financeira
+
+             ┌──────────────────────────────────┐
+             │      Evolução do Usuário         │
+             └───────────────┬──────────────────┘
+                             │
+                             ▼
+                  Melhores decisões financeiras
+                             │
+                             ▼
+             ┌──────────────────────────────────┐
+             │   Evolução da Plataforma         │
+             │ (Memória + Contexto Financeiro)  │
+             └───────────────┬──────────────────┘
+                             │
+                             ▼
+             ┌──────────────────────────────────┐
+             │ Evolução da Inteligência         │
+             │      Financeira                  │
+             └───────────────┬──────────────────┘
+                             │
+                             ▼
+                 Novas descobertas contextuais
+                             │
+                             └──────────────► reinicia o ciclo
+
+---
+
+## Apêndice A — Matriz de Rastreabilidade
+
+| Jornada | Perfis     | Capacidades     |
+| ------- | ---------- | --------------- |
+| MJ-001  | PERF-001   | CAP-001 CAP-002 |
+| MJ-002  | PERF-001/2 | CAP-001 CAP-002 |
+| MJ-003  | PERF-002/3 | CAP-002 CAP-004 |
+| MJ-004  | PERF-003   | CAP-004 CAP-005 |
+| MJ-005  | PERF-004   | CAP-003 CAP-005 |
+| MJ-006  | Todos      | Todas           |
+
+---
+
+## Apêndice B — Diagrama da Jornada
+
+Consciência
+      │
+      ▼
+Organização
+      │
+      ▼
+Controle
+      │
+      ▼
+Compreensão
+      │
+      ▼
+Planejamento
+      │
+      ▼
+Evolução Contínua
+      │
+      └───────────────┐
+                      ▼
+              Nova Consciência
+
+---
 
