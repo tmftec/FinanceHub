@@ -285,3 +285,397 @@ Seu propósito é identificar as relações conceituais existentes entre os prin
 
 Esses relacionamentos constituem a base para o Modelo Conceitual (ERD), para as Regras de Negócio e para a implementação da plataforma.
 
+
+---
+
+## REL-001 — Pessoa possui Conta Financeira
+
+**Descrição**
+
+A Pessoa utiliza uma ou mais Contas Financeiras para administrar seus recursos financeiros e registrar os acontecimentos que compõem sua realidade financeira.
+
+Uma Conta Financeira representa o principal meio de interação entre a Pessoa e sua vida financeira dentro do FinanceHub.
+
+**Impacto no Domínio**
+
+A correta associação entre Pessoa e Conta Financeira permite que a plataforma compreenda a origem e o destino dos acontecimentos financeiros, preservando o contexto individual de cada participante.
+
+---
+
+## REL-002 — Conta Financeira registra Evento Financeiro
+
+**Descrição**
+
+Todo Evento Financeiro é registrado por meio de uma Conta Financeira.
+
+A Conta Financeira representa o contexto operacional onde os acontecimentos financeiros ocorrem, permitindo identificar sua origem, destino ou ambos.
+
+**Impacto no Domínio**
+
+Esse relacionamento estabelece a ligação entre a realidade financeira e os registros que servirão de base para a construção do conhecimento financeiro da plataforma.
+
+---
+
+## REL-003 — Evento Financeiro altera Recursos Financeiros
+
+**Descrição**
+
+Todo Evento Financeiro produz alguma alteração na realidade financeira.
+
+Essa alteração pode representar aumento, redução, transferência, criação ou extinção de recursos financeiros, independentemente de sua natureza.
+
+**Impacto no Domínio**
+
+A alteração provocada pelos Eventos Financeiros representa a principal fonte de transformação da realidade financeira observada pelo FinanceHub.
+
+---
+
+## REL-004 — Eventos Financeiros constroem a Memória Financeira
+
+**Descrição**
+
+Os Eventos Financeiros não representam apenas registros históricos.
+
+Quando observados ao longo do tempo, eles permitem que o FinanceHub construa uma Memória Financeira capaz de preservar comportamentos, recorrências, sazonalidades e demais padrões relevantes da vida financeira.
+
+**Impacto no Domínio**
+
+A Memória Financeira constitui a base de conhecimento permanente da plataforma e permite compreender a evolução da realidade financeira além da simples análise de eventos isolados.
+
+---
+
+## REL-005 — Memória Financeira alimenta a Inteligência Financeira
+
+**Descrição**
+
+A Inteligência Financeira utiliza o conhecimento acumulado pela Memória Financeira para compreender o contexto do usuário e produzir análises contextualizadas.
+
+Sem Memória Financeira, a Inteligência estaria limitada à interpretação de acontecimentos isolados.
+
+**Impacto no Domínio**
+
+Esse relacionamento estabelece que toda Inteligência Financeira produzida pelo FinanceHub deve estar fundamentada em conhecimento previamente construído, preservando coerência, contexto e continuidade na evolução do usuário.
+
+---
+
+## REL-006 — Inteligência Financeira produz Descobertas Contextuais
+
+**Descrição**
+
+A Inteligência Financeira transforma conhecimento em descobertas capazes de ampliar a compreensão da realidade financeira do usuário.
+
+Essas descobertas podem revelar padrões, riscos, oportunidades, tendências ou comportamentos que dificilmente seriam percebidos apenas pela observação direta dos registros financeiros.
+
+**Impacto no Domínio**
+
+As Descobertas Contextuais representam o principal mecanismo de geração de valor do FinanceHub, transformando informação em conhecimento útil para apoiar decisões e promover a evolução financeira contínua.
+
+---
+
+## REL-007 — Pessoa pode definir Objetivos Financeiros
+
+**Descrição**
+
+A Pessoa pode definir Objetivos Financeiros para representar estados futuros desejados em sua vida financeira.
+
+Os Objetivos Financeiros constituem um recurso opcional da plataforma, utilizado para ampliar a compreensão do contexto financeiro e apoiar análises mais personalizadas.
+
+Sua ausência não limita a capacidade do FinanceHub de compreender a realidade financeira do usuário.
+
+**Impacto no Domínio**
+
+Quando presentes, os Objetivos Financeiros fornecem contexto adicional para interpretação da evolução financeira.
+
+Quando inexistentes, a Inteligência Financeira continua sendo construída normalmente a partir dos acontecimentos, da memória financeira e do contexto observado.
+
+---
+
+## REL-008 — Objetivos Financeiros contextualizam a interpretação dos Eventos Financeiros
+
+**Descrição**
+
+Quando definidos, os Objetivos Financeiros permitem interpretar os Eventos Financeiros sob a perspectiva da realidade desejada pelo usuário.
+
+Esse relacionamento é opcional e complementa a capacidade analítica da plataforma, sem interferir na construção da Inteligência Financeira quando inexistente.
+
+**Impacto no Domínio**
+
+Os Objetivos Financeiros enriquecem a interpretação dos acontecimentos financeiros, permitindo que recomendações e descobertas sejam avaliadas também em função das intenções declaradas pelo usuário.
+
+---
+
+## REL-009 — Organização participa de Eventos Financeiros
+
+**Descrição**
+
+As Organizações representam os agentes externos com os quais a Pessoa estabelece relações financeiras.
+
+Empresas, escolas, supermercados, governos, prestadores de serviços e demais organizações participam continuamente dos Eventos Financeiros registrados pela plataforma.
+
+**Impacto no Domínio**
+
+A identificação das Organizações permite compreender hábitos de consumo, padrões de relacionamento financeiro e construir conhecimento contextualizado sobre a origem dos acontecimentos financeiros.
+
+---
+
+## REL-010 — Instituição Financeira mantém Contas Financeiras
+
+**Descrição**
+
+As Instituições Financeiras disponibilizam e administram as Contas Financeiras utilizadas pela Pessoa.
+
+Cada Conta Financeira está vinculada a uma Instituição Financeira responsável por sua existência e operação.
+
+**Impacto no Domínio**
+
+Esse relacionamento permite integrar informações provenientes de diferentes instituições, consolidando a realidade financeira do usuário sem perder a origem de cada recurso financeiro.
+
+---
+
+## REL-011 — Descobertas Contextuais promovem Evolução Financeira
+
+**Descrição**
+
+As Descobertas Contextuais representam conhecimentos produzidos pela Inteligência Financeira capazes de ampliar a compreensão do usuário sobre sua própria realidade financeira.
+
+Ao revelar padrões, comportamentos, oportunidades e riscos anteriormente desconhecidos, essas descobertas apoiam decisões mais conscientes e favorecem mudanças graduais de comportamento.
+
+**Impacto no Domínio**
+
+A Evolução Financeira não é consequência da utilização da plataforma, mas da capacidade do usuário de compreender sua realidade e transformar esse conhecimento em decisões melhores.
+
+O papel do FinanceHub é acelerar esse processo por meio de Inteligência Financeira contextualizada.
+
+---
+
+## REL-012 — Evento Financeiro ocorre em um Momento no Tempo
+
+**Descrição**
+
+Todo Evento Financeiro ocorre em um instante ou período específico da linha do tempo.
+
+A dimensão temporal constitui parte inseparável do acontecimento financeiro e permite compreender sua sequência, recorrência, sazonalidade e evolução ao longo da vida financeira.
+
+**Impacto no Domínio**
+
+A dimensão temporal torna possível interpretar acontecimentos de forma contextualizada, permitindo que a Memória Financeira identifique padrões, ciclos e mudanças de comportamento que não seriam perceptíveis pela análise de eventos isolados.
+
+---
+
+## REL-013 — A Memória Financeira identifica Padrões Temporais
+
+**Descrição**
+
+A Memória Financeira observa a ocorrência dos Eventos Financeiros ao longo do tempo para identificar padrões recorrentes, sazonalidades e comportamentos financeiros.
+
+Esses padrões são construídos automaticamente pela plataforma a partir do histórico observado, sem depender de configurações realizadas pelo usuário.
+
+**Impacto no Domínio**
+
+Esse relacionamento permite que o FinanceHub compreenda comportamentos previsíveis da realidade financeira e antecipe situações relevantes, fornecendo conhecimento contextualizado antes que seus efeitos sejam percebidos pelo usuário.
+
+---
+
+## REL-014 — A Inteligência Financeira antecipa Situações Relevantes
+
+**Descrição**
+
+A Inteligência Financeira utiliza o conhecimento construído pela Memória Financeira para antecipar acontecimentos previsíveis, identificar tendências e alertar o usuário antes que impactos relevantes ocorram.
+
+Essa capacidade baseia-se na observação contínua da realidade financeira e na identificação de padrões contextualizados.
+
+**Impacto no Domínio**
+
+A antecipação de situações relevantes transforma a atuação do FinanceHub de reativa para proativa, permitindo que o usuário tome decisões antes que problemas ou oportunidades se concretizem.
+
+---
+
+## REL-015 — A Inteligência Financeira contextualiza Descobertas
+
+**Descrição**
+
+As Descobertas Contextuais não são produzidas apenas pela análise isolada dos Eventos Financeiros.
+
+A Inteligência Financeira considera simultaneamente a Memória Financeira, o contexto atual, os padrões observados, a sazonalidade e demais conhecimentos construídos pela plataforma para produzir interpretações compatíveis com a realidade do usuário.
+
+**Impacto no Domínio**
+
+Esse relacionamento estabelece que nenhuma descoberta deve ser baseada em uma única informação isolada.
+
+Toda descoberta produzida pelo FinanceHub deverá considerar o contexto disponível antes de apoiar qualquer decisão.
+
+---
+
+## REL-016 — Descobertas Contextuais geram Recomendações
+
+**Descrição**
+
+Quando uma Descoberta Contextual identifica uma oportunidade, risco ou comportamento relevante, a Inteligência Financeira poderá produzir Recomendações compatíveis com o nível de maturidade financeira do usuário.
+
+As Recomendações representam sugestões de ação, nunca decisões automáticas.
+
+**Impacto no Domínio**
+
+As Recomendações transformam conhecimento em orientação prática, preservando sempre a autonomia do usuário sobre suas decisões financeiras.
+
+---
+
+## REL-017 — A Evolução Financeira amplia a capacidade da Inteligência Financeira
+
+**Descrição**
+
+À medida que o usuário evolui financeiramente, a Inteligência Financeira amplia progressivamente a profundidade e a complexidade dos conhecimentos apresentados.
+
+Essa evolução respeita a maturidade financeira observada, evitando recomendações incompatíveis com a realidade atual do usuário.
+
+**Impacto no Domínio**
+
+A Inteligência Financeira deve adaptar continuamente sua comunicação e suas recomendações, apresentando informações adequadas ao momento vivido pelo usuário e favorecendo uma evolução sustentável de sua educação financeira.
+
+---
+
+## REL-018 — A Inteligência Financeira identifica Conhecimentos Não Solicitados
+
+**Descrição**
+
+A Inteligência Financeira observa continuamente a realidade financeira para identificar informações relevantes que o usuário provavelmente desconhece ou não percebeu que deveria investigar.
+
+Esses conhecimentos surgem da interpretação contextualizada dos acontecimentos financeiros e não dependem de perguntas previamente realizadas pelo usuário.
+
+**Impacto no Domínio**
+
+Esse relacionamento estabelece a atuação proativa do FinanceHub, permitindo que a plataforma apresente descobertas espontaneamente, ampliando a compreensão da realidade financeira e favorecendo decisões mais conscientes.
+
+---
+
+## REL-019 — Organizações originam Acontecimentos Financeiros
+
+**Descrição**
+
+As Organizações representam os principais agentes externos com os quais Pessoas e Unidades Financeiras estabelecem relações econômicas.
+
+Grande parte dos Eventos Financeiros surge a partir dessas relações, como compras, pagamentos, recebimentos, contratos, mensalidades, impostos, tarifas e demais obrigações financeiras.
+
+**Impacto no Domínio**
+
+A identificação das Organizações permite que o FinanceHub compreenda a origem dos acontecimentos financeiros e construa conhecimento sobre os relacionamentos econômicos mantidos pelo usuário ao longo do tempo.
+
+---
+
+## REL-020 — Um Evento Financeiro pode ser composto por múltiplos Componentes Financeiros
+
+**Descrição**
+
+Um Evento Financeiro pode representar um único acontecimento econômico, mesmo quando seu valor é composto por diversos elementos financeiros distintos.
+
+Cada componente representa uma parcela específica do acontecimento, preservando sua identidade econômica sem descaracterizar o Evento Financeiro que lhe deu origem.
+
+Exemplos incluem boletos compostos por aluguel, condomínio, água e taxas adicionais, faturas de cartão de crédito compostas por diversas compras ou folhas de pagamento compostas por vencimentos e descontos.
+
+**Impacto no Domínio**
+
+Esse relacionamento permite representar corretamente acontecimentos complexos sem fragmentar artificialmente a realidade financeira observada pelo FinanceHub.
+
+---
+
+## REL-021 — Componentes Financeiros enriquecem a compreensão dos Eventos Financeiros
+
+**Descrição**
+
+Quando existentes, os Componentes Financeiros permitem compreender individualmente os elementos que compõem um Evento Financeiro.
+
+Essa decomposição amplia a capacidade analítica da plataforma sem alterar a representação do acontecimento original.
+
+**Impacto no Domínio**
+
+A identificação dos Componentes Financeiros permite que a Inteligência Financeira compreenda comportamentos específicos, acompanhe sua evolução ao longo do tempo e produza análises mais precisas sobre a realidade financeira.
+
+---
+
+## REL-022 — A Memória Financeira preserva o contexto dos acontecimentos
+
+**Descrição**
+
+A Memória Financeira não armazena apenas Eventos Financeiros.
+
+Ela preserva também o contexto em que esses acontecimentos ocorreram, permitindo compreender circunstâncias, comportamentos e relações que seriam perdidas na simples observação dos valores registrados.
+
+**Impacto no Domínio**
+
+A preservação do contexto permite que acontecimentos semelhantes sejam interpretados de maneira diferente quando inseridos em realidades distintas, aumentando significativamente a qualidade da Inteligência Financeira produzida pela plataforma.
+
+---
+
+## REL-023 — A Inteligência Financeira aprende continuamente
+
+**Descrição**
+
+A Inteligência Financeira evolui continuamente à medida que novos acontecimentos financeiros ampliam a Memória Financeira da plataforma.
+
+Cada novo conhecimento produzido passa a integrar o contexto utilizado nas interpretações futuras, tornando as análises progressivamente mais contextualizadas e aderentes à realidade do usuário.
+
+**Impacto no Domínio**
+
+Esse relacionamento estabelece que a Inteligência Financeira constitui um processo contínuo de aprendizagem, e não um conjunto estático de regras previamente definidas.
+
+---
+
+## REL-024 — A Inteligência Financeira explica suas conclusões
+
+**Descrição**
+
+Toda conclusão produzida pela Inteligência Financeira deverá ser fundamentada nos conhecimentos construídos pela plataforma.
+
+Sempre que possível, o FinanceHub deverá ser capaz de demonstrar quais acontecimentos, padrões, contextos ou comportamentos contribuíram para determinada descoberta ou recomendação.
+
+**Impacto no Domínio**
+
+A explicabilidade fortalece a confiança do usuário na Inteligência Financeira e transforma recomendações em conhecimento compreensível, favorecendo decisões conscientes e sustentáveis.
+
+---
+
+## REL-025 — A Inteligência Financeira preserva a coerência histórica
+
+**Descrição**
+
+Novas interpretações produzidas pela Inteligência Financeira devem considerar o conhecimento previamente construído, preservando coerência com a evolução observada ao longo do tempo.
+
+Mudanças de comportamento poderão alterar interpretações futuras, mas nunca deverão desconsiderar a história financeira construída até aquele momento.
+
+**Impacto no Domínio**
+
+A coerência histórica garante continuidade na construção do conhecimento e evita recomendações contraditórias decorrentes da análise isolada de acontecimentos recentes.
+
+---
+
+## REL-026 — A Inteligência Financeira adapta sua comunicação ao nível de maturidade financeira
+
+**Descrição**
+
+O FinanceHub deverá apresentar descobertas, recomendações e análises utilizando linguagem compatível com o nível de maturidade financeira observado no usuário.
+
+A evolução da comunicação deverá ocorrer gradualmente, acompanhando a capacidade demonstrada pelo usuário de compreender e utilizar conhecimentos financeiros mais complexos.
+
+**Impacto no Domínio**
+
+Esse relacionamento estabelece que a Inteligência Financeira deve promover evolução contínua, evitando tanto simplificações excessivas quanto recomendações incompatíveis com a realidade financeira do usuário.
+
+---
+
+## REL-027 — A Inteligência Financeira aprende antes de ensinar
+
+**Descrição**
+
+Antes de orientar o usuário, a Inteligência Financeira deverá compreender sua realidade, seu contexto, seus comportamentos e sua evolução financeira.
+
+O conhecimento produzido pela plataforma deverá ser consequência da observação contínua da realidade financeira e nunca de regras genéricas aplicadas indistintamente a todos os usuários.
+
+**Impacto no Domínio**
+
+Esse relacionamento estabelece que compreender a realidade do usuário é condição necessária para produzir conhecimento verdadeiramente personalizado, preservando a identidade do FinanceHub como uma plataforma de Inteligência Financeira contextualizada.
+
+---
+
+
+
+
