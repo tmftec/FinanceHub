@@ -6,7 +6,7 @@
 
 **Versão:** 1.0
 
-**Status:** Em elaboração
+**Status:** Congelado
 
 **Objetivo**
 
@@ -247,22 +247,21 @@ Essa evolução ocorre de forma progressiva.
 
 ```text
 Realidade Financeira
-        ↓
-Acontecimentos
-        ↓
-Histórico Financeiro
-        ↓
+↓
+Eventos Financeiros
+↓
 Memória Financeira
-        ↓
+↓
 Conhecimento
-        ↓
+↓
 Inteligência Financeira
-        ↓
+↓
 Descobertas Contextuais
-        ↓
+↓
 Decisões
-        ↓
+↓
 Nova Realidade Financeira
+
 ```
 
 Esse fluxo representa o ciclo permanente de aprendizado da plataforma.
@@ -424,7 +423,9 @@ A identificação das Organizações permite compreender hábitos de consumo, pa
 
 As Instituições Financeiras disponibilizam e administram as Contas Financeiras utilizadas pela Pessoa.
 
-Cada Conta Financeira está vinculada a uma Instituição Financeira responsável por sua existência e operação.
+Uma Conta Financeira pode estar associada a uma Instituição Financeira quando aplicável.
+
+Uma Instituição Financeira pode possuir múltiplas Contas Financeiras.
 
 **Impacto no Domínio**
 
@@ -548,17 +549,17 @@ Esse relacionamento estabelece a atuação proativa do FinanceHub, permitindo qu
 
 ---
 
-## REL-019 — Organizações originam Acontecimentos Financeiros
+## REL-019 — Organizações originam eventos Financeiros
 
 **Descrição**
 
-As Organizações representam os principais agentes externos com os quais Pessoas e Unidades Financeiras estabelecem relações econômicas.
+As Organizações representam os principais agentes externos com os quais Organizações participam de relações econômicas com a Pessoa por meio dos Eventos Financeiros.
 
 Grande parte dos Eventos Financeiros surge a partir dessas relações, como compras, pagamentos, recebimentos, contratos, mensalidades, impostos, tarifas e demais obrigações financeiras.
 
 **Impacto no Domínio**
 
-A identificação das Organizações permite que o FinanceHub compreenda a origem dos acontecimentos financeiros e construa conhecimento sobre os relacionamentos econômicos mantidos pelo usuário ao longo do tempo.
+A identificação das Organizações permite que o FinanceHub compreenda a origem dos eventos financeiros e construa conhecimento sobre os relacionamentos econômicos mantidos pelo usuário ao longo do tempo.
 
 ---
 
@@ -728,7 +729,7 @@ Ela fornece contexto para os acontecimentos financeiros associados a determinada
 
 ### Dependência
 
-Conta Financeira está relacionada a uma Pessoa ou Unidade Financeira e, quando aplicável, a uma Instituição Financeira.
+Conta Financeira está relacionada a uma Pessoa e, quando aplicável, a uma Instituição Financeira.
 
 Sua representação dentro do FinanceHub depende da identificação do contexto ao qual pertence.
 
@@ -891,8 +892,6 @@ Sua interpretação também poderá ser enriquecida pelo conhecimento construíd
 ---
 
 ## CON-007 — Componente Financeiro
-
-**Status:** Conceito candidato à canonização
 
 ### Origem
 
