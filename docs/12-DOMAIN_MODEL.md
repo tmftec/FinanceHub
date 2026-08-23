@@ -676,6 +676,590 @@ Esse relacionamento estabelece que compreender a realidade do usuário é condi�
 
 ---
 
+# 6 — NATUREZA DOS CONCEITOS
 
+## CON-001 — Pessoa
+
+### Origem
+
+Pessoa é um conceito pertencente à realidade do usuário e existe independentemente do FinanceHub.
+
+O FinanceHub passa a representar uma Pessoa quando ela estabelece uma relação com a plataforma e sua realidade financeira passa a fazer parte do contexto compreendido pelo sistema.
+
+### Papel
+
+Pessoa representa o indivíduo cuja realidade financeira é acompanhada, compreendida e contextualizada pelo FinanceHub.
+
+É o principal sujeito da experiência financeira da plataforma e o ponto de referência para a interpretação dos acontecimentos, comportamentos, objetivos e evolução financeira.
+
+### Dependência
+
+Pessoa não depende de qualquer outro conceito do FinanceHub para existir.
+
+Outros conceitos podem estabelecer relações com a Pessoa, mas sua existência conceitual é independente dessas relações.
+
+### Participação do usuário
+
+A representação inicial da Pessoa depende de sua interação com o FinanceHub.
+
+Entretanto, a compreensão de sua realidade financeira não deve depender da coleta prévia de todas as informações possíveis sobre ela.
+
+O FinanceHub deverá construir conhecimento progressivamente a partir das informações disponíveis, reduzindo a necessidade de preenchimento manual e evitando exigir do usuário conhecimentos prévios sobre os conceitos utilizados pela plataforma.
+
+### Evolução
+
+A Pessoa permanece sendo o mesmo sujeito ao longo do tempo, enquanto sua realidade financeira, seus comportamentos, seus conhecimentos e sua relação com o FinanceHub podem evoluir continuamente.
+
+Essa evolução deve ser considerada pela plataforma para que a compreensão da realidade financeira permaneça contextualizada ao momento vivido pelo usuário.
+
+---
+
+## CON-002 — Conta Financeira
+
+### Origem
+
+Conta Financeira existe na realidade financeira independentemente do FinanceHub e passa a ser representada pela plataforma quando suas informações são disponibilizadas por meio de interação do usuário, importação, integração ou outra forma de obtenção de dados.
+
+### Papel
+
+Conta Financeira representa uma relação financeira utilizada para manter, movimentar ou administrar recursos financeiros.
+
+Ela fornece contexto para os acontecimentos financeiros associados a determinada relação financeira e contribui para a compreensão da realidade financeira da Pessoa.
+
+### Dependência
+
+Conta Financeira está relacionada a uma Pessoa ou Unidade Financeira e, quando aplicável, a uma Instituição Financeira.
+
+Sua representação dentro do FinanceHub depende da identificação do contexto ao qual pertence.
+
+### Participação do usuário
+
+A Pessoa pode fornecer informações sobre uma Conta Financeira, mas sua representação não deve depender necessariamente de cadastro manual completo.
+
+Sempre que informações suficientes estiverem disponíveis por outros meios, o FinanceHub deverá utilizá-las para reduzir o esforço necessário para representar a realidade financeira.
+
+### Evolução
+
+A utilização, situação e contexto de uma Conta Financeira podem mudar ao longo do tempo.
+
+Novos acontecimentos e informações podem ampliar continuamente o conhecimento do FinanceHub sobre a relação financeira representada.
+
+---
+
+## CON-003 — Evento Financeiro
+
+### Origem
+
+Evento Financeiro representa um acontecimento que ocorre na realidade financeira, independentemente de sua representação pelo FinanceHub.
+
+Um Evento Financeiro pode chegar ao FinanceHub por diferentes meios, incluindo informação fornecida pelo usuário, dados obtidos por integração, importação ou identificação realizada pela própria plataforma.
+
+A forma como o acontecimento é identificado ou recebido não altera sua natureza.
+
+### Papel
+
+Evento Financeiro representa um acontecimento capaz de alterar ou influenciar a realidade financeira.
+
+É a principal unidade de observação da vida financeira dentro do domínio e constitui uma das principais fontes para a construção do conhecimento financeiro da plataforma.
+
+Um Evento Financeiro pode representar acontecimentos simples ou complexos, podendo estar associado a outros conceitos que permitam compreender sua natureza, origem, destino, contexto e composição.
+
+### Dependência
+
+Um Evento Financeiro pode estabelecer relações com Pessoas, Contas Financeiras, Organizações, Instituições Financeiras, Componentes Financeiros, tempo e demais conceitos relevantes para sua compreensão.
+
+Essas relações fornecem contexto ao acontecimento, mas não alteram sua natureza fundamental como acontecimento da realidade financeira.
+
+### Participação do usuário
+
+A Pessoa pode informar diretamente um Evento Financeiro, mas o funcionamento do FinanceHub não deve depender exclusivamente de lançamentos manuais.
+
+Sempre que possível, a plataforma deverá utilizar as informações disponíveis para identificar e compreender acontecimentos financeiros sem exigir que o usuário os registre individualmente.
+
+### Evolução
+
+O conhecimento sobre um Evento Financeiro pode evoluir após sua identificação inicial.
+
+Novas informações, relações, classificações, componentes ou contextos podem ser associados ao acontecimento à medida que o FinanceHub amplia sua compreensão da realidade financeira.
+
+Essa evolução não altera o acontecimento original, mas amplia a capacidade da plataforma de compreendê-lo e utilizá-lo na construção de conhecimento.
+
+---
+
+## CON-004 — Organização
+
+### Origem
+
+Organização existe na realidade externa ao FinanceHub e representa um agente com o qual a Pessoa estabelece ou pode estabelecer relações econômicas.
+
+Sua existência independe de sua representação pela plataforma.
+
+### Papel
+
+Organização representa empresas, instituições, estabelecimentos, órgãos públicos, prestadores de serviços e outros agentes que participam da realidade financeira da Pessoa.
+
+Sua identificação permite contextualizar os acontecimentos financeiros e compreender os relacionamentos econômicos mantidos ao longo do tempo.
+
+### Dependência
+
+Organização não depende da Pessoa nem de qualquer outro conceito do FinanceHub para existir.
+
+Sua relação com a Pessoa é estabelecida por meio dos acontecimentos e demais relações financeiras observadas.
+
+### Participação do usuário
+
+A Pessoa pode fornecer informações sobre uma Organização, mas sua identificação não deve depender necessariamente de cadastro manual.
+
+Sempre que possível, o FinanceHub deverá reconhecer e contextualizar Organizações a partir das informações disponíveis sobre os acontecimentos financeiros.
+
+### Evolução
+
+O conhecimento sobre uma Organização pode ser ampliado ao longo do tempo à medida que novos acontecimentos e relações financeiras são observados.
+
+O FinanceHub poderá construir progressivamente uma compreensão mais precisa do relacionamento da Pessoa com cada Organização.
+
+---
+
+## CON-005 — Instituição Financeira
+
+### Origem
+
+Instituição Financeira existe na realidade externa ao FinanceHub e representa uma organização que oferece, mantém ou administra relações e serviços financeiros.
+
+Sua existência independe de sua representação pela plataforma.
+
+### Papel
+
+Instituição Financeira representa o agente responsável por manter ou disponibilizar determinadas Contas Financeiras e outros serviços financeiros utilizados pela Pessoa.
+
+Sua identificação permite preservar o contexto institucional das relações financeiras representadas pelo FinanceHub.
+
+### Dependência
+
+Instituição Financeira não depende de uma Conta Financeira ou de uma Pessoa para existir.
+
+As Contas Financeiras e demais relações financeiras podem estar associadas a uma Instituição Financeira para contextualizar sua origem e funcionamento.
+
+### Participação do usuário
+
+A Pessoa pode fornecer informações sobre uma Instituição Financeira, mas sua identificação não deve depender necessariamente de cadastro manual.
+
+Quando as informações disponíveis permitirem sua identificação, o FinanceHub deverá utilizá-las para reduzir o esforço necessário ao usuário.
+
+### Evolução
+
+A relação da Pessoa com uma Instituição Financeira pode mudar ao longo do tempo.
+
+Novas Contas Financeiras, serviços e acontecimentos podem ampliar o conhecimento do FinanceHub sobre essa relação.
+
+---
+
+## CON-006 — Objetivo Financeiro
+
+### Origem
+
+Objetivo Financeiro nasce de uma intenção declarada pela Pessoa em relação a uma realidade financeira futura desejada.
+
+Sua existência depende da manifestação de uma intenção, mas sua ausência não impede o FinanceHub de compreender ou acompanhar a realidade financeira.
+
+### Papel
+
+Objetivo Financeiro representa um estado financeiro desejado pela Pessoa e fornece contexto adicional para interpretar acontecimentos, comportamentos e evolução financeira.
+
+Quando presente, permite avaliar a realidade atual também em relação ao que a Pessoa deseja alcançar.
+
+### Dependência
+
+Objetivo Financeiro depende de uma Pessoa que o estabelece.
+
+Não constitui dependência para a existência ou funcionamento dos demais conceitos fundamentais do FinanceHub.
+
+### Participação do usuário
+
+A participação da Pessoa é necessária para definir um Objetivo Financeiro.
+
+Sua utilização é opcional e o FinanceHub deverá continuar produzindo conhecimento, inteligência e descobertas mesmo quando nenhum objetivo tiver sido declarado.
+
+O usuário não deve ser pressionado a criar objetivos para obter valor da plataforma.
+
+### Evolução
+
+Um Objetivo Financeiro pode ser alterado, ajustado, alcançado, abandonado ou substituído conforme a realidade e as intenções da Pessoa evoluem.
+
+Sua interpretação também poderá ser enriquecida pelo conhecimento construído sobre a realidade financeira.
+
+---
+
+## CON-007 — Componente Financeiro
+
+**Status:** Conceito candidato à canonização
+
+### Origem
+
+Componente Financeiro representa uma parte identificável de um Evento Financeiro quando o acontecimento possui elementos financeiros distintos que podem ser compreendidos individualmente.
+
+Ele não representa um novo acontecimento independente, mas uma parte do acontecimento ao qual pertence.
+
+### Papel
+
+Componente Financeiro permite representar individualmente elementos que compõem um Evento Financeiro complexo, preservando simultaneamente a unidade do acontecimento original.
+
+Pode representar, por exemplo, diferentes parcelas, naturezas ou elementos que formam o valor ou a composição de um único acontecimento financeiro.
+
+### Dependência
+
+Componente Financeiro depende conceitualmente de um Evento Financeiro.
+
+Sua existência isolada não representa adequadamente a realidade que o conceito pretende modelar, pois sua função é explicar ou detalhar parte de um acontecimento maior.
+
+### Participação do usuário
+
+A Pessoa pode fornecer informações sobre os componentes de um Evento Financeiro, mas sua identificação não deve depender necessariamente de lançamento ou classificação manual.
+
+Sempre que as informações disponíveis permitirem identificar a composição de um acontecimento, o FinanceHub deverá utilizá-las para ampliar sua compreensão sem exigir esforço adicional do usuário.
+
+### Evolução
+
+O conhecimento sobre um Componente Financeiro pode ser ampliado após sua identificação inicial.
+
+Novas informações podem permitir compreender melhor sua natureza, contexto, relacionamento, recorrência ou comportamento ao longo do tempo.
+
+A evolução desse conhecimento não altera o Evento Financeiro ao qual o componente pertence, mas amplia a capacidade de interpretá-lo.
+
+---
+
+## CON-008 — Memória Financeira
+
+### Origem
+
+Memória Financeira é construída progressivamente pelo FinanceHub a partir da observação acumulada da realidade financeira da Pessoa.
+
+Ela nasce da interpretação contínua dos acontecimentos, relações, contextos e conhecimentos identificados pela plataforma ao longo do tempo.
+
+Memória Financeira não existe como uma informação que o usuário precise criar ou cadastrar previamente.
+
+### Papel
+
+Memória Financeira representa o conhecimento acumulado sobre a realidade financeira da Pessoa e sua evolução ao longo do tempo.
+
+Ela permite que acontecimentos atuais sejam interpretados à luz do histórico conhecido, preservando relações, comportamentos, recorrências, sazonalidades, mudanças e demais conhecimentos relevantes identificados pela plataforma.
+
+### Dependência
+
+Memória Financeira depende do conhecimento obtido a partir da realidade financeira observada.
+
+Sua construção está relacionada principalmente aos Eventos Financeiros e aos contextos associados a eles, mas pode incorporar conhecimento proveniente de outros conceitos do domínio.
+
+Sem acontecimentos ou informações suficientes sobre a realidade financeira, a Memória Financeira permanece limitada ao conhecimento disponível.
+
+### Participação do usuário
+
+A construção da Memória Financeira não depende de cadastro ou manutenção manual pelo usuário.
+
+A Pessoa pode fornecer informações que ampliem ou corrijam o conhecimento da plataforma, mas o FinanceHub deve ser capaz de construir e ampliar sua Memória Financeira a partir das informações disponíveis.
+
+O usuário não precisa compreender o conceito de Memória Financeira nem realizar qualquer ação específica para que ela seja construída.
+
+### Evolução
+
+Memória Financeira evolui continuamente à medida que novos acontecimentos e informações ampliam o conhecimento sobre a realidade financeira.
+
+Novos conhecimentos podem confirmar, complementar, modificar ou contextualizar entendimentos anteriores.
+
+A evolução da Memória Financeira permite que interpretações futuras considerem não apenas o que aconteceu, mas também o que a plataforma aprendeu sobre a recorrência, contexto e significado desses acontecimentos ao longo do tempo.
+
+---
+
+## CON-009 — Inteligência Financeira
+
+### Origem
+
+Inteligência Financeira surge como consequência da interpretação do conhecimento construído pelo FinanceHub sobre a realidade financeira da Pessoa.
+
+Ela não precisa ser criada, configurada ou solicitada previamente pelo usuário.
+
+Sua existência decorre da capacidade da plataforma de transformar acontecimentos, contexto, histórico e conhecimento acumulado em compreensão financeira.
+
+### Papel
+
+Inteligência Financeira representa a capacidade do FinanceHub de compreender a realidade financeira da Pessoa, identificar relações e produzir conhecimento contextualizado capaz de apoiar sua evolução e suas decisões.
+
+Ela conecta o conhecimento acumulado à sua utilização prática, permitindo que a plataforma identifique padrões, riscos, oportunidades, tendências e situações que poderiam passar despercebidas pelo usuário.
+
+### Dependência
+
+Inteligência Financeira depende do conhecimento disponível sobre a realidade financeira e utiliza a Memória Financeira como uma de suas principais bases de contexto.
+
+Sua qualidade e profundidade são influenciadas pela quantidade, qualidade, consistência e diversidade do conhecimento disponível.
+
+### Participação do usuário
+
+A Pessoa não precisa configurar ou operar diretamente a Inteligência Financeira.
+
+Sua participação ocorre principalmente por meio da interação com os conhecimentos apresentados, da confirmação ou correção de informações quando necessário e das decisões que toma a partir delas.
+
+A ausência de perguntas ou comandos do usuário não impede a atuação da Inteligência Financeira.
+
+### Evolução
+
+Inteligência Financeira evolui continuamente conforme a compreensão do FinanceHub sobre a realidade financeira se amplia.
+
+Novos acontecimentos, contextos, padrões e conhecimentos podem modificar ou aprofundar interpretações anteriores.
+
+Sua evolução deve acompanhar também a evolução financeira e a maturidade demonstrada pela Pessoa, permitindo que a profundidade das informações apresentadas seja progressivamente ampliada.
+
+---
+
+## CON-010 — Descoberta Contextual
+
+### Origem
+
+Descoberta Contextual surge quando a Inteligência Financeira identifica uma relação, padrão, comportamento, risco, oportunidade ou conhecimento relevante que não estava necessariamente explícito para a Pessoa.
+
+Sua origem está na interpretação contextualizada do conhecimento disponível, e não na formulação prévia de uma pergunta pelo usuário.
+
+### Papel
+
+Descoberta Contextual representa um conhecimento novo ou uma percepção relevante apresentada pela plataforma com o objetivo de ampliar a compreensão da Pessoa sobre sua própria realidade financeira.
+
+Ela pode revelar relações entre acontecimentos, mudanças de comportamento, padrões temporais, comparações inesperadas, tendências ou situações que dificilmente seriam percebidas pela observação isolada dos registros.
+
+### Dependência
+
+Descoberta Contextual depende da Inteligência Financeira e do conhecimento utilizado para fundamentar sua interpretação.
+
+Não constitui um registro independente da realidade financeira, mas uma nova compreensão produzida a partir dela.
+
+### Participação do usuário
+
+A Pessoa não precisa solicitar uma Descoberta Contextual.
+
+O FinanceHub deve ser capaz de apresentar descobertas espontaneamente quando identificar conhecimento relevante que possa ampliar a compreensão do usuário.
+
+A interação posterior da Pessoa pode confirmar, questionar ou aprofundar a descoberta.
+
+### Evolução
+
+Uma Descoberta Contextual pode ser aprofundada ou reinterpretada conforme novos acontecimentos e conhecimentos sejam incorporados à Memória Financeira.
+
+Uma descoberta anteriormente apresentada também pode perder relevância quando a realidade financeira se modifica.
+
+O conhecimento que originou a descoberta permanece parte da história da plataforma, mesmo quando a conclusão deixa de representar adequadamente a realidade atual.
+
+---
+
+## CON-011 — Evolução Financeira
+
+### Origem
+
+Evolução Financeira é percebida a partir das mudanças observadas na realidade financeira da Pessoa ao longo do tempo.
+
+Ela não nasce de um acontecimento isolado, mas da interpretação de mudanças acumuladas em comportamentos, condições financeiras, conhecimentos e capacidade de tomar decisões.
+
+### Papel
+
+Evolução Financeira representa a transformação da relação da Pessoa com sua própria realidade financeira ao longo do tempo.
+
+Seu propósito é permitir compreender não apenas se a situação financeira mudou, mas também como a Pessoa passou a compreender, administrar e decidir sobre sua vida financeira.
+
+A evolução pode ocorrer em diferentes dimensões e não deve ser reduzida exclusivamente ao aumento ou redução de patrimônio ou renda.
+
+### Dependência
+
+Evolução Financeira depende do conhecimento acumulado sobre a realidade da Pessoa e de sua interpretação ao longo do tempo.
+
+Ela utiliza informações provenientes dos acontecimentos financeiros, da Memória Financeira, das Descobertas Contextuais e de outros conhecimentos relevantes disponíveis na plataforma.
+
+### Participação do usuário
+
+A Pessoa não precisa declarar ou cadastrar sua própria Evolução Financeira.
+
+O FinanceHub deve ser capaz de identificar sinais de evolução a partir das mudanças observadas em sua realidade e em sua relação com as informações e decisões financeiras.
+
+A participação do usuário pode contribuir para essa compreensão, especialmente por meio de interações, confirmações, correções e decisões tomadas a partir dos conhecimentos apresentados.
+
+### Evolução
+
+Evolução Financeira é, por natureza, um conceito dinâmico.
+
+Sua compreensão pode mudar continuamente conforme novos acontecimentos, comportamentos, conhecimentos e decisões são observados.
+
+A evolução não precisa ser linear: períodos de avanço, estabilidade ou retrocesso podem fazer parte da trajetória financeira da Pessoa.
+
+O FinanceHub deve considerar essa trajetória de forma contextualizada, evitando avaliar a evolução a partir de um único indicador ou acontecimento isolado.
+
+---
+
+# 7. Limites do Domínio
+## 7.1 — O FinanceHub não controla a realidade financeira
+
+O FinanceHub representa, observa, interpreta e apoia a realidade financeira.
+
+Ele não é a própria realidade financeira.
+
+Portanto:
+
+não movimenta recursos simplesmente por compreender um evento;
+não altera contas financeiras apenas por identificar uma situação;
+não executa decisões financeiras automaticamente;
+não substitui a autonomia da Pessoa.
+
+A plataforma pode identificar uma oportunidade ou risco, mas a decisão permanece pertencente ao usuário.
+
+## 7.2 — Registro não é o objetivo final do domínio
+
+Registrar Eventos Financeiros é necessário para construir conhecimento, mas o domínio do FinanceHub não se limita ao registro.
+
+O valor do sistema está na capacidade de transformar acontecimentos em:
+
+Memória → Inteligência → Descobertas → Evolução.
+
+Consequentemente, qualquer interpretação da plataforma que reduza o FinanceHub a um simples mecanismo de lançamento e consulta financeira representa uma compreensão incompleta do domínio.
+
+## 7.3 — O FinanceHub não depende da intervenção constante do usuário
+
+A plataforma não deve considerar que o usuário precisa:
+
+classificar tudo manualmente;
+configurar previamente todos os comportamentos;
+informar todos os objetivos;
+formular perguntas para receber conhecimento;
+compreender previamente os conceitos internos do domínio.
+
+Quando informações suficientes estiverem disponíveis, o FinanceHub deverá utilizar o próprio conhecimento construído para reduzir o esforço necessário.
+
+A ausência de uma informação opcional não deve impedir a inteligência de atuar.
+
+## 7.4 — Inteligência não é decisão
+
+A Inteligência Financeira pode:
+
+interpretar;
+identificar;
+comparar;
+contextualizar;
+antecipar;
+descobrir;
+recomendar.
+
+Mas não deve ser confundida com a própria decisão financeira da Pessoa.
+
+A plataforma apoia a decisão.
+
+A Pessoa decide.
+
+Essa fronteira é fundamental para preservar autonomia e responsabilidade.
+
+## 7.5 — O FinanceHub não substitui especialistas
+
+O domínio do FinanceHub compreende inteligência financeira contextualizada para apoiar a Pessoa.
+
+Isso não significa que a plataforma assuma automaticamente o papel de:
+
+contador;
+advogado;
+planejador financeiro profissional;
+consultor de investimentos;
+especialista tributário;
+instituição financeira.
+
+Quando uma situação ultrapassar o conhecimento ou a responsabilidade própria da plataforma, isso deverá ser tratado como uma fronteira do domínio, e não como autorização para expandir indefinidamente suas responsabilidades.
+
+## 7.6 — O FinanceHub não é uma instituição financeira
+
+O FinanceHub pode compreender informações relacionadas a:
+
+bancos;
+contas;
+cartões;
+investimentos;
+instituições financeiras;
+obrigações financeiras.
+
+Isso não transforma a plataforma em uma instituição que mantém ou movimenta esses recursos.
+
+A existência de uma relação com uma Instituição Financeira pertence ao domínio representado.
+
+A instituição e sua operação pertencem ao mundo externo ao FinanceHub.
+
+## 7.7 — O FinanceHub não precisa conhecer tudo para produzir valor
+
+Essa fronteira é particularmente importante.
+
+A ausência de conhecimento completo não deve ser interpretada como impossibilidade de atuação.
+
+O FinanceHub deve trabalhar com o conhecimento disponível, reconhecendo suas limitações quando necessário.
+
+Uma informação desconhecida não deve ser inventada para preencher uma lacuna.
+
+A Inteligência Financeira deve distinguir entre:
+
+o que sabe, o que infere e o que não sabe.
+
+Essa distinção protege a confiança construída com o usuário.
+
+## 7.8 — A plataforma não deve transformar possibilidades em obrigações
+
+Conceitos complementares, como:
+
+Objetivos Financeiros;
+informações adicionais;
+classificações;
+contextos declarados;
+
+podem enriquecer a inteligência.
+
+Mas sua ausência não deve transformar a experiência em incompleta.
+
+O domínio fundamental deve continuar funcionando a partir da realidade financeira observável.
+
+## 7.9 — A tecnologia está fora do domínio
+
+Tecnologias utilizadas para materializar o FinanceHub não constituem conceitos do domínio.
+
+Isso inclui, entre outros:
+
+banco de dados;
+APIs;
+frameworks;
+modelos de Inteligência Artificial;
+interfaces;
+aplicativos;
+mecanismos de integração.
+
+Esses elementos pertencem à implementação.
+
+O domínio define o que precisa existir e como deve se comportar conceitualmente.
+
+A tecnologia define como isso será materializado.
+
+## 7.10 — A fronteira fundamental
+
+Podemos resumir o limite do domínio em uma única relação:
+
+REALIDADE FINANCEIRA
+        │
+        ▼
+   FINANCEHUB
+        │
+        ├── Observa
+        ├── Compreende
+        ├── Constrói Memória
+        ├── Produz Inteligência
+        ├── Gera Descobertas
+        └── Apoia a Evolução
+        │
+        ▼
+DECISÃO DA PESSOA
+
+O FinanceHub está entre a realidade e a decisão.
+
+Ele não é a realidade.
+
+E não é o decisor.
+
+Seu papel é transformar realidade financeira em conhecimento útil para que a Pessoa possa tomar decisões melhores.
+
+---
 
 
