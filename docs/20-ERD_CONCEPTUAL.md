@@ -370,9 +370,9 @@ Conta Financeira deverá possuir representação estrutural própria no ERD Conc
 
 ### Fundamentação
 
-Evento Financeiro representa um acontecimento da realidade financeira e constitui uma das principais unidades de observação do domínio.
+Evento Financeiro representa um acontecimento da realidade financeira e constitui a principal abstração estrutural dos acontecimentos financeiros representados pelo FinanceHub.
 
-Um evento pode possuir relações com Pessoa, Conta Financeira, Organização, Instituição Financeira, Componentes Financeiros e outros elementos contextuais.
+Um evento pode possuir relações com Pessoa, Conta Financeira, Organização e Componentes Financeiros.
 
 O evento precisa permanecer identificável para que seu contexto, composição e histórico possam ser compreendidos.
 
@@ -452,11 +452,9 @@ Instituição Financeira deverá possuir representação estrutural própria no 
 
 Objetivo Financeiro representa uma intenção declarada pela Pessoa em relação a um estado financeiro desejado.
 
-Possui significado próprio, depende conceitualmente da Pessoa que o estabelece e pode evoluir ao longo do tempo.
+Possui significado próprio e pode evoluir ao longo do tempo.
 
-Sua representação precisa ser preservada independentemente dos Eventos Financeiros que posteriormente possam ser relacionados ao objetivo.
-
-A opcionalidade do conceito não elimina a necessidade de representação própria quando um objetivo existir.
+Sua existência está associada à Pessoa que o estabelece, mas essa associação não deverá ser interpretada automaticamente como dependência estrutural equivalente à existente entre Evento Financeiro e Componente Financeiro.
 
 ### Conclusão
 
@@ -619,7 +617,7 @@ A existência de uma Pessoa não depende da existência de qualquer um desses co
 
 Uma Conta Financeira representa uma relação financeira associada à Pessoa.
 
-A Pessoa pode possuir múltiplas Contas Financeiras, enquanto uma Conta Financeira está associada ao contexto financeiro de uma Pessoa.
+Uma Pessoa pode estar associada a múltiplas Contas Financeiras, enquanto uma Conta Financeira está associada ao contexto financeiro de uma Pessoa.
 
 Conceitualmente:
 
