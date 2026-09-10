@@ -1527,4 +1527,276 @@ As relações com cardinalidade ainda indeterminada deverão ser objeto de anál
 
 -------------
 
+# 8. Regras Estruturais do Modelo
+
+Este capítulo consolida as regras estruturais que podem ser derivadas dos capítulos anteriores do ERD Conceitual.
+
+Seu objetivo é distinguir aquilo que já está determinado pelo domínio daquilo que permanece em aberto.
+
+As regras aqui apresentadas não introduzem novos conceitos ou relacionamentos.
+
+Elas apenas consolidam as consequências estruturais das decisões já estabelecidas.
+
+---
+
+## 8.1 — Pessoa como contexto central
+
+Pessoa constitui o principal contexto estrutural da realidade financeira representada pelo FinanceHub.
+
+Pessoa pode estar associada a:
+
+- Contas Financeiras;
+- Eventos Financeiros;
+- Objetivos Financeiros.
+
+Nenhuma dessas relações é requisito universal para a existência da Pessoa.
+
+A ausência de qualquer uma delas não invalida a existência da Pessoa no modelo.
+
+---
+
+## 8.2 — Conta Financeira
+
+Conta Financeira representa uma relação financeira contextualizada em relação à Pessoa.
+
+Uma Pessoa pode estar associada a nenhuma, uma ou múltiplas Contas Financeiras.
+
+A existência de Conta Financeira não é obrigatória para a existência da Pessoa.
+
+A relação entre Pessoa e Conta Financeira não deverá ser interpretada como definição de propriedade jurídica.
+
+A possibilidade de uma Conta Financeira estar associada a múltiplas Pessoas permanece não determinada.
+
+---
+
+## 8.3 — Evento Financeiro
+
+Evento Financeiro representa um acontecimento da realidade financeira contextualizado no FinanceHub.
+
+Uma Pessoa pode estar associada a nenhum, um ou múltiplos Eventos Financeiros.
+
+A existência de Evento Financeiro não é necessária para a existência da Pessoa.
+
+Um Evento Financeiro pode possuir associação com uma Conta Financeira quando essa relação for conhecida ou aplicável.
+
+A possibilidade de um Evento Financeiro estar associado a múltiplas Pessoas ou múltiplas Contas Financeiras permanece não determinada.
+
+---
+
+## 8.4 — Componente Financeiro
+
+Componente Financeiro representa uma parte identificável de um Evento Financeiro.
+
+A relação entre Evento Financeiro e Componente Financeiro possui natureza de composição.
+
+Um Evento Financeiro pode não possuir Componentes Financeiros ou possuir múltiplos Componentes.
+
+Um Componente Financeiro está associado a um Evento Financeiro e depende conceitualmente dele.
+
+Um Componente Financeiro não representa um Evento Financeiro independente.
+
+---
+
+## 8.5 — Objetivo Financeiro
+
+Objetivo Financeiro representa uma intenção financeira associada à Pessoa.
+
+Uma Pessoa pode existir sem Objetivos Financeiros.
+
+A existência de Objetivo Financeiro é opcional.
+
+Objetivo Financeiro não constitui requisito para o funcionamento da realidade financeira representada pelo FinanceHub.
+
+A multiplicidade completa da relação entre Pessoa e Objetivo Financeiro permanece parcialmente determinada enquanto a extremidade inversa não estiver fundamentada de forma suficiente no Domain Model.
+
+---
+
+## 8.6 — Instituição Financeira
+
+Instituição Financeira representa um contexto institucional que pode estar associado a Contas Financeiras.
+
+Uma Instituição Financeira pode estar associada a nenhuma, uma ou múltiplas Contas Financeiras.
+
+A associação entre Conta Financeira e Instituição Financeira é opcional.
+
+A ausência de uma Instituição Financeira associada não invalida a existência da Conta Financeira.
+
+A possibilidade de uma Conta Financeira estar associada a múltiplas Instituições Financeiras permanece não determinada.
+
+---
+
+## 8.7 — Organização
+
+Organização representa um agente econômico que pode originar ou participar de Eventos Financeiros.
+
+Uma Organização pode estar associada a nenhum, um ou múltiplos Eventos Financeiros.
+
+Nem todo Evento Financeiro precisa estar associado a uma Organização.
+
+A distinção entre os papéis de origem e participação ainda não está formalmente determinada.
+
+A multiplicidade do lado de Evento Financeiro permanece parcialmente determinada.
+
+---
+
+## 8.8 — Relações cuja ausência não invalida o conceito relacionado
+
+As relações abaixo são reconhecidas como relações cuja ausência não invalida, por si só, a existência do conceito relacionado:
+
+- Pessoa e Conta Financeira;
+- Pessoa e Evento Financeiro;
+- Pessoa e Objetivo Financeiro;
+- Conta Financeira e Instituição Financeira;
+- Conta Financeira e Evento Financeiro;
+- Organização e Evento Financeiro.
+
+A ausência da associação não implica ausência de relevância da relação.
+
+Significa que o conceito relacionado pode existir sem que essa associação esteja presente ou identificada.
+
+---
+
+## 8.9 — Relação de composição
+
+A relação entre Evento Financeiro e Componente Financeiro constitui uma composição conceitual.
+
+Essa composição estabelece que:
+
+- o Componente Financeiro representa parte do Evento;
+- o Componente depende conceitualmente do Evento;
+- o Componente não constitui um acontecimento independente;
+- um Evento pode não possuir componentes;
+- um Evento pode possuir múltiplos componentes.
+
+A composição não deverá ser generalizada para outras relações do modelo sem fundamento específico.
+
+---
+
+## 8.10 — Relações que não devem ser inferidas
+
+O ERD não deverá criar automaticamente relações diretas entre:
+
+- Pessoa e Organização;
+- Pessoa e Instituição Financeira;
+- Instituição Financeira e Evento Financeiro.
+
+A existência de caminhos indiretos entre conceitos não constitui fundamento suficiente para criar uma relação estrutural direta.
+
+---
+
+## 8.11 — Multiplicidades suficientemente fundamentadas
+
+Até o estágio atual, a relação cuja multiplicidade está suficientemente fundamentada em ambas as extremidades é:
+
+    Evento Financeiro 0..N ─── Componente Financeiro 1..1
+
+Essa multiplicidade foi derivada da natureza de composição e da dependência conceitual estabelecidas para Evento Financeiro e Componente Financeiro.
+
+As demais relações possuem pelo menos uma extremidade cuja multiplicidade ainda não foi suficientemente determinada pelo domínio.
+
+Essas lacunas deverão permanecer explícitas.
+
+---
+
+## 8.12 — Cardinalidades parcialmente determinadas
+
+Permanecem parcialmente determinadas as relações:
+
+    Pessoa 0..N ─── Conta Financeira ?
+
+    Pessoa 0..N ─── Evento Financeiro ?
+
+    Conta Financeira 0..N ─── Evento Financeiro ?
+
+    Pessoa 0..N ─── Objetivo Financeiro ?
+
+    Instituição Financeira 0..N ─── Conta Financeira ?
+
+    Organização 0..N ─── Evento Financeiro ?
+
+O símbolo `?` representa exclusivamente uma característica ainda não determinada.
+
+Ele não constitui cardinalidade formal.
+
+---
+
+## 8.13 — Dependência estrutural
+
+A dependência conceitual claramente estabelecida no núcleo atual é:
+
+    Evento Financeiro
+            │
+            └── Componente Financeiro
+
+O Componente Financeiro depende conceitualmente do Evento Financeiro.
+
+As demais associações não deverão ser consideradas dependências estruturais equivalentes sem fundamento específico.
+
+---
+
+## 8.14 — Ausência de inferência
+
+O modelo não deverá utilizar uma regra estrutural para inferir automaticamente outra regra que não tenha sido estabelecida.
+
+Em particular:
+
+- `0..N` em uma extremidade não determina automaticamente a multiplicidade da extremidade oposta;
+- uma associação não implica dependência;
+- uma relação indireta não implica uma relação direta;
+- uma relação cuja ausência não invalida o conceito relacionado não implica que o conceito relacionado seja irrelevante;
+- uma cardinalidade indeterminada não implica ausência da relação.
+
+---
+
+## 8.15 — Estado de maturidade do modelo
+
+O ERD Conceitual encontra-se em um estágio no qual:
+
+- os principais conceitos estruturais estão identificados;
+- seus principais relacionamentos estão definidos;
+- dependências relevantes foram identificadas;
+- opcionalidades conhecidas foram registradas;
+- parte das cardinalidades foi determinada;
+- as lacunas restantes estão explicitamente registradas.
+
+O modelo não deverá ser considerado incompleto simplesmente porque algumas cardinalidades permanecem indeterminadas.
+
+A indeterminação documentada representa uma decisão consciente de não introduzir regras não sustentadas pelo domínio.
+
+---
+
+## 8.16 — Regra de preservação
+
+Qualquer evolução futura do modelo deverá preservar as regras estruturais estabelecidas neste capítulo.
+
+Uma alteração somente deverá ser realizada quando:
+
+1. surgir nova informação de domínio;
+2. uma regra anteriormente indefinida for formalmente determinada;
+3. for identificada uma inconsistência real;
+4. ou uma decisão estrutural existente for deliberadamente revisada.
+
+Melhorias puramente textuais ou preferências de implementação não deverão alterar as regras estruturais consolidadas.
+
+---
+
+## 8.17 — Preparação para a próxima camada
+
+Com as regras estruturais consolidadas, o modelo encontra-se preparado para iniciar a análise de sua eventual tradução para uma representação lógica, desde que as decisões ainda abertas sejam tratadas explicitamente.
+
+Essa próxima análise deverá preservar:
+
+- os conceitos estruturais;
+- os relacionamentos;
+- as dependências;
+- as opcionalidades;
+- as cardinalidades determinadas;
+- e as incertezas explicitamente registradas.
+
+A representação lógica não deverá resolver silenciosamente lacunas que permanecem abertas no modelo conceitual.
+
+Qualquer decisão adicional necessária para a representação lógica deverá ser identificada e tratada explicitamente.
+
+----------
+
 
