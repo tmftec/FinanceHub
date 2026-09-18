@@ -287,33 +287,33 @@ Esses relacionamentos constituem a base para o Modelo Conceitual (ERD), para as 
 
 ---
 
-## REL-001 — Pessoa possui Conta Financeira
+## REL-001 — Pessoa e Conta Financeira
 
 **Descrição**
 
-A Pessoa utiliza uma ou mais Contas Financeiras para administrar seus recursos financeiros e registrar os acontecimentos que compõem sua realidade financeira.
+A Pessoa pode estar associada a zero, uma ou múltiplas Contas Financeiras para contextualizar sua realidade financeira no FinanceHub.
 
-Uma Conta Financeira representa o principal meio de interação entre a Pessoa e sua vida financeira dentro do FinanceHub.
+Uma Conta Financeira representa uma relação financeira identificável dentro da realidade financeira da Pessoa.
+
+A associação entre Pessoa e Conta Financeira não deverá ser interpretada como definição de propriedade jurídica da Conta Financeira.
 
 **Impacto no Domínio**
 
-A correta associação entre Pessoa e Conta Financeira permite que a plataforma compreenda a origem e o destino dos acontecimentos financeiros, preservando o contexto individual de cada participante.
+A correta associação entre Pessoa e Conta Financeira permite que a plataforma contextualize acontecimentos financeiros relacionados àquela conta, preservando a realidade financeira representada.
 
----
-
-## REL-002 — Conta Financeira registra Evento Financeiro
+## REL-002 — Conta Financeira contextualiza Evento Financeiro
 
 **Descrição**
 
-Todo Evento Financeiro é registrado por meio de uma Conta Financeira.
+Um Evento Financeiro pode ser representado pelo FinanceHub independentemente de uma Conta Financeira ter sido identificada.
 
-A Conta Financeira representa o contexto operacional onde os acontecimentos financeiros ocorrem, permitindo identificar sua origem, destino ou ambos.
+Quando conhecida ou aplicável, uma Conta Financeira pode estar associada ao Evento Financeiro, fornecendo contexto sobre a relação financeira envolvida.
+
+A ausência de uma Conta Financeira identificada não invalida a existência do Evento Financeiro.
 
 **Impacto no Domínio**
 
-Esse relacionamento estabelece a ligação entre a realidade financeira e os registros que servirão de base para a construção do conhecimento financeiro da plataforma.
-
----
+A associação entre Conta Financeira e Evento Financeiro permite contextualizar o acontecimento financeiro quando essa relação estiver disponível, sem criar uma obrigatoriedade inexistente no domínio.
 
 ## REL-003 — Evento Financeiro altera Recursos Financeiros
 
@@ -749,43 +749,15 @@ Novos acontecimentos e informações podem ampliar continuamente o conhecimento 
 
 ## CON-003 — Evento Financeiro
 
-### Origem
+**Natureza**
 
-Evento Financeiro representa um acontecimento que ocorre na realidade financeira, independentemente de sua representação pelo FinanceHub.
+Evento Financeiro representa um acontecimento da realidade financeira e constitui a principal abstração para representação desses acontecimentos no FinanceHub.
 
-Um Evento Financeiro pode chegar ao FinanceHub por diferentes meios, incluindo informação fornecida pelo usuário, dados obtidos por integração, importação ou identificação realizada pela própria plataforma.
+**Relações**
 
-A forma como o acontecimento é identificado ou recebido não altera sua natureza.
+Um Evento Financeiro pode estabelecer relações com Pessoas, Contas Financeiras, Organizações e Componentes Financeiros, conforme aplicável ao acontecimento.
 
-### Papel
-
-Evento Financeiro representa um acontecimento capaz de alterar ou influenciar a realidade financeira.
-
-É a principal unidade de observação da vida financeira dentro do domínio e constitui uma das principais fontes para a construção do conhecimento financeiro da plataforma.
-
-Um Evento Financeiro pode representar acontecimentos simples ou complexos, podendo estar associado a outros conceitos que permitam compreender sua natureza, origem, destino, contexto e composição.
-
-### Dependência
-
-Um Evento Financeiro pode estabelecer relações com Pessoas, Contas Financeiras, Organizações, Instituições Financeiras, Componentes Financeiros, tempo e demais conceitos relevantes para sua compreensão.
-
-Essas relações fornecem contexto ao acontecimento, mas não alteram sua natureza fundamental como acontecimento da realidade financeira.
-
-### Participação do usuário
-
-A Pessoa pode informar diretamente um Evento Financeiro, mas o funcionamento do FinanceHub não deve depender exclusivamente de lançamentos manuais.
-
-Sempre que possível, a plataforma deverá utilizar as informações disponíveis para identificar e compreender acontecimentos financeiros sem exigir que o usuário os registre individualmente.
-
-### Evolução
-
-O conhecimento sobre um Evento Financeiro pode evoluir após sua identificação inicial.
-
-Novas informações, relações, classificações, componentes ou contextos podem ser associados ao acontecimento à medida que o FinanceHub amplia sua compreensão da realidade financeira.
-
-Essa evolução não altera o acontecimento original, mas amplia a capacidade da plataforma de compreendê-lo e utilizá-lo na construção de conhecimento.
-
----
+Quando houver associação com uma Conta Financeira, a Instituição Financeira relacionada poderá ser determinada por meio dessa Conta. Isso não constitui uma relação estrutural direta entre Evento Financeiro e Instituição Financeira.
 
 ## CON-004 — Organização
 
