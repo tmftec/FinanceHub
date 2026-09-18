@@ -6,7 +6,7 @@
 
 **Versão:** 1.0
 
-**Status:** Em elaboração
+**Status:** Em consolidação
 
 **Objetivo**
 
@@ -139,7 +139,8 @@ O MVP deverá contemplar, no mínimo, os seguintes tipos já definidos pelo dom�
 - Compra Cartão;
 - Pagamento Fatura;
 - Estorno;
-- Ajuste.
+- Ajuste;
+- Abertura de Conta;
 
 A implementação deverá manter o conceito de Evento Financeiro único, evitando criar entidades diferentes para cada tipo de acontecimento quando isso não for necessário ao domínio.
 
@@ -156,10 +157,10 @@ Planejado
    ↓
 Agendado
    ↓
-Pago
+Efetivado
 ```
 
-A implementação poderá utilizar uma representação técnica equivalente, desde que preserve esse comportamento conceitual.
+A implementação deverá utilizar os estados PLANEJADO, AGENDADO e EFETIVADO, preservando esse comportamento conceitual.
 
 O usuário deverá conseguir confirmar um evento futuro quando ele efetivamente ocorrer.
 
@@ -221,7 +222,7 @@ O MVP deverá possuir estrutura compatível com Componente Financeiro, pois um E
 
 A utilização de componentes poderá ser simples na primeira experiência do usuário.
 
-A existência de componentes não deverá ser obrigatória para registrar um Evento Financeiro.
+Todo Evento Financeiro que produza impacto financeiro deverá possuir pelo menos um Componente Financeiro.
 
 Cada Componente Financeiro deverá permanecer conceitualmente dependente de um Evento Financeiro.
 
