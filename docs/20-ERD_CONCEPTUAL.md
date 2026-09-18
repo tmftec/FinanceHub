@@ -2,11 +2,11 @@
 
 ## ERD Conceitual do FinanceHub
 
-**Documento:** 13-ERD_CONCEPTUAL.md
+**Documento:** 20-ERD_CONCEPTUAL.md
 
 **Versão:** 1.0
 
-**Status:** Em elaboração
+**Status:** Congelado
 
 **Objetivo**
 
